@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.main-head {
+    font-size: 1.2rem;
+    color: #402a5e;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(135deg, #07adb3, #80c1cc, #07e9c3);
+}
+
+.team-content {
+    width: 75%;
+    max-width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.team-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.center h1 {
+    color: #402a5e;
+    font-size: 1.7rem;
+    text-align: center;
+    border-bottom: 4px solid #402a5e;
+}
+
+.box {
+    padding: 16px;
+    background: #155d69;
+    border-radius: 15px;
+    transition: all .38s ease;
+}
+
+.box h3 {
+    font-size: 23px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.box h5 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #b7b4bb;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.icons i {
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 8px;
+    transition: all .38s ease;
+}
+
+.icons i:hover {
+    transform: scale(1.2);
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+/* MEDIAQUERIES RESPONSIVE DESIGN */
+
+@media(max-width: 1240px) {
+    .team {
+        width: 100%;
+        height: auto;
+        padding: 90px 2%;
+    }
+
+    .center h1 {
+        font-size: 3.2rem;
+    }
+}
